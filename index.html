@@ -37,18 +37,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .dropdown-item:hover {
-            color: white !important;
-            text-decoration: none !important;
-            background-color: #484f59 !important;
-        }
-
-        .dropdown-item.active {
-            color: #161f33 !important;
-            text-decoration: none !important;
-            background-color: white !important;
-        }
-
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             max-width: 300px;
@@ -78,7 +66,9 @@
 
 </head>
 
+
 <body>
+    >
 
     <section class="header-area">
         <div class="navbar-area">
@@ -88,92 +78,8 @@
                         <nav class="navbar navbar-expand-lg mx-5">
                             <a class="navbar-brand" href="{{route('index">
                                 <img src="assets/images/logo-1.png" style="height:70px;" alt="Logo">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-                            <!-- <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item   {{ (request()->is('/')) ? 'active' : '' }}">
-                                <a class="page-scroll" href="{{url('/">Home</a>
-                                    </li>
-                                    <li class="nav-item dropdown  {{ (request()->is('products/*')) ? 'active' : '' }}">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle " href="#" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        Products <span class="caret"></span>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item {{ (request()->routeIs('products.classroomsolution')) ? 'active' : '' }}"
-                                            href="{{route('products.classroomsolution">
-                                                e-EdPort Virtual Classroom Solution
-                                            </a>
-                                            <a class="dropdown-item {{ (request()->routeIs('products.studentselflLearning')) ? 'active' : '' }}"
-                                            href="{{route('products.studentselflLearning">
-                                                e-EdPort Student Self-Learning Solution
-                                            </a>
-                                            <a class="dropdown-item {{ (request()->routeIs('products.parentalcontrol')) ? 'active' : '' }}"
-                                            href="{{route('products.parentalcontrol">
-                                                e-EdPort Parental Control App
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown {{ (request()->is('services/*')) ? 'active' : '' }}">
-                                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false" v-pre>
-                                                Services <span class="caret"></span>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item {{ (request()->routeIs('services.teachertraining')) ? 'active' : '' }}"
-                                                    href="{{route('services.teachertraining">
-                                                e-EdPort Smart Teacher Training
-                                            </a>
-                                            <a class="dropdown-item {{ (request()->routeIs('services.teachercertification')) ? 'active' : '' }}"
-                                                    href="{{route('services.teachercertification">
-                                                e-EdPort Smart Teacher Certification
-                                            </a>
-                                            {{-- <a class="dropdown-item {{ (request()->routeIs('services.careercounselling')) ? 'active' : '' }}"
-                                                    href="{{route('services.careercounselling">
-                                            e-EdPort Student Career Counselling
-                                            </a> --}}
-                                        </div>
-                                    </li>
-                                    <li class=" nav-item dropdown
-                                                    {{ (request()->is('resources/*')) ? 'active' : '' }}">
-                                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
-                                                        role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false" v-pre>
-                                                        Resources <span class="caret"></span>
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-right"
-                                                        aria-labelledby="navbarDropdown">
-                                                        <a class="dropdown-item  {{ (request()->routeIs('resources.brochure')) ? 'active' : '' }}"
-                                                            href="{{route('resources.brochure">
-                                                Brochure
-                                            </a>
-                                        
-                                            <a class="dropdown-item  {{ (request()->routeIs('resources.faqs')) ? 'active' : '' }}"
-                                                            href="{{route('resources.faqs">
-                                                FAQ’s
-                                            </a>
-                                        </div>
-                                    </li>
-                                                                    <li class="nav-item   {{ (request()->routeIs('about')) ? 'active' : '' }}">
-                                                            <a class="page-scroll"
-                                                                href="{{route('about">About Us</a>
-                                    </li>
-                                    <li
-                                        class="nav-item   {{ (request()->routeIs('about.contactus')) ? 'active' : '' }}">
-                                                                <a class="page-scroll" href="{{route('about.contactus">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div> -->
-                        </nav> <!-- navbar -->
+                            </a>                       
+                        </nav> 
                     </div>
                 </div>
             </div>
@@ -187,15 +93,14 @@
                                 vikram singh</h3>
                             <p class="text wow fadeInUp" style="color:#1a1a1a" data-wow-duration=".7s"
                                 data-wow-delay="0.9s">Sub Sheding</p>
-                         
-                                                   </div> <!-- header content -->
+                      </div> 
                     </div>
                 </div>
             </div>
             <div class="header-shape">
                 <img src="assets/images/header-shape.svg" alt="shape">
             </div>
-        </div> <!-- header content -->
+        </div> 
     </section>
     <style>
         .header-btn li:nth-child(2) {
@@ -235,6 +140,19 @@
         </div>
     </div>
     <div class="overlay-right"></div>
+    <section class="pt-0 mt-0">
+        <div class="container-fluid">
+            <div class="row py-5 bg-light">
+                <div class="col-md-4 col-lg-4 col-4 text-center">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Admin login</a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-4 text-center">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Student Login</a>
+                    </div>
+                <div class="col-md-4 col-lg-4 col-4 text-center"><a href="#" target="_blank" rel="noopener noreferrer">Teacher Login</a></div>
+            </div>
+        </div>
+    </section>
   <!--====== Key Features PART START ======-->
   <section id="portfolio" class="portfolio-area">
       <div class="container-fluid">
@@ -267,221 +185,163 @@
                       <div class="col-lg-6 ">
                           <div class="single-about d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media">
                               <img src="{{asset('assets\images\KeyFeatures\virtualschooling\liveclasses.png')}}"
-                                                                    alt="Icon" class="align-self-center mr-3">
-                                                                    <div class="about-content media-body">
-                                                                        <h5 class="mt-0 mb-1">Live Classes</h5>
-                                                                        <p class="text ">Helps conduct uninterrupted
-                                                                            classes online from the
-                                                                            comfort of your home.</p>
-                                                                    </div>
-                                                    </div>
-                                            </div>
-                                            <div class="col-lg-6 ">
-                                                <div class="single-about d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media">
-                                                    <img src="{{asset('assets\images\KeyFeatures\virtualschooling\practiceexercises2.png')}}"
-                                                        alt="Icon" class="align-self-center mr-3">
-                                                    <div class="about-content media-body">
-                                                        <h5 class="mt-0 mb-1">Practice Exercises</h5>
-                                                        <p class="text pr-2"> Helps students master each chapter's
-                                                            concepts.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 ">
-                                                <div class="single-about d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media">
-                                                    <img src="{{asset('assets\images\KeyFeatures\virtualschooling\selfexplanatoryvideos2.png')}}"
-                                                        alt="Icon" class="align-self-center mr-3">
-                                                    <div class="about-content media-body">
-                                                        <h5 class="mt-0 mb-1">Self Explanatory Videos</h5>
-                                                        <p class="text pr-2">Videos that help you visualize various
-                                                            concepts, making it easier to understand.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 ">
-                                                <div
-                                                    class="single-about d-sm-flex mt-30  Features pb-3 pt-2 pl-2 media">
-                                                    <img src="{{asset('assets\images\KeyFeatures\virtualschooling\onlineassessment2.png')}}"
-                                                        alt="Icon" class="align-self-center mr-3">
-                                                    <div class="about-content media-body">
-                                                        <h5 class="mt-0 mb-1">Online Assessments</h5>
-                                                        <p class="text pr-2"> Easy to create, launch and manage online
-                                                            tests and
-                                                            assessments securely with Google Classroom.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 ">
-                                                <div class="single-about d-sm-flex mt-30 Features pb-3 pt-2 pl-2 media">
-                                                    <img src="{{asset('assets\images\KeyFeatures\virtualschooling\mocktest.png')}}"
-                                                        alt="Icon" class="align-self-center mr-3">
-                                                    <div class="about-content media-body">
-                                                        <h5 class="mt-0 mb-1">Mock Tests</h5>
-                                                        <p class="text pr-2">
-                                                            Be exam ready by solving test questions from a pool of
-                                                            questions
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 ">
-                                                <div
-                                                    class="single-about media d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media">
-                                                    <img src="{{asset('assets\images\KeyFeatures\virtualschooling\Additionalresources.png')}}"
-                                                        alt="Icon" class="align-self-center mr-3">
-                                                    <div class="about-content media-body">
-                                                        <h5 class="mt-0 mb-1">Additional Resources</h5>
-                                                        <p class="text pr-2">
-                                                            Extra Resources like Drawing Board, WikiPedia and many more
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
+                                alt="Icon" class="align-self-center mr-3">
+                                <div class="about-content media-body">
+                                    <h5 class="mt-0 mb-1">Live Classes</h5>
+                                    <p class="text ">Helps conduct uninterrupted
+                                        classes online from the
+                                        comfort of your home.</p>
+                                </div>
                     </div>
-                    <div id="institutional" class="hidden portfolio-card institutional-brand">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="single-about d-sm-flex mt-30   pb-3 pt-2 pl-2 Features media ">
-                                    <img src="{{asset('assets\images\KeyFeatures\InstitutionalBranding\School Website_2.png')}}"
-                                        alt="Icon" class="align-self-center mr-3">
-                                    <div class="about-content media-body">
-                                        <h5 class="mt-0 mb-1">Educational institution Website</h5>
-                                        <p class="text pr-2">Create your digital identity with your Educational
-                                            institution
-                                            Website.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="single-about d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media ">
-                                    <img src="{{asset('assets\images\KeyFeatures\InstitutionalBranding\DigitalmarketingSetup.png')}}"
-                                        alt="Icon" class="align-self-center mr-3">
-                                    <div class="about-content media-body">
-                                        <h5 class="mt-0 mb-1">Digital Marketing Setup</h5>
-                                        <p class="text pr-2">Increasing your brand presence with your own
-                                            website along with social media pages.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="single-about d-sm-flex  mt-30 pb-3 pt-2 pl-2 Features media">
-                                    <img src="{{asset('assets\images\KeyFeatures\InstitutionalBranding\PromotinalVideo.png')}}"
-                                        alt="Icon" class="align-self-center mr-3">
-                                    <div class="about-content media-body">
-                                        <h5 class="mt-0 mb-1">Promotional Videos</h5>
-                                        <p class="text pr-2"> Promotional video content for individual educational
-                                            institution.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="single-about d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media">
+                        <img src="{{asset('assets\images\KeyFeatures\virtualschooling\practiceexercises2.png')}}"
+                            alt="Icon" class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Practice Exercises</h5>
+                            <p class="text pr-2"> Helps students master each chapter's
+                                concepts.
+                            </p>
                         </div>
                     </div>
-                    <div id="smart" class="hidden  portfolio-card smart-teacher">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="single-about d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media">
-                                    <img src="{{asset('assets\images\KeyFeatures\SmartTeacherTraining\OnlineTeacherAssessment_2.png')}}"
-                                        alt="Icon" class="align-self-center mr-3">
-                                    <div class="about-content media-body">
-                                        <h5 class="mt-0 mb-1">Online Teacher Assessment</h5>
-                                        <p class="text pr-2">Assessing the teacher’s ability to help
-                                            finesse their technical knowledge.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="single-about d-sm-flex  mt-30 pb-3 pt-2 pl-2 Features media">
-                                    <img src="{{asset('assets\images\KeyFeatures\SmartTeacherTraining\Smart Teacher Training.png')}}"
-                                        alt="Icon" class="align-self-center mr-3">
-                                    <div class="about-content media-body">
-                                        <h5 class="mt-0 mb-1">Online Teacher Training Course</h5>
-                                        <p class="text pr-2">Familiarising teachers with the new
-                                            technological trends </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="single-about d-sm-flex  mt-30 pb-3 pt-2 pl-2 Features media">
-                                    <img src="{{asset('assets\images\KeyFeatures\SmartTeacherTraining\SmartTeacherCertification.png')}}"
-                                        alt="Icon" class="align-self-center mr-3">
-                                    <div class="about-content media-body">
-                                        <h5 class="mt-0 mb-1">Smart Teacher Certification</h5>
-                                        <p class="text pr-2">Certifying teachers as technologically
-                                            advanced ‘Smart Teachers</p>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="single-about d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media">
+                        <img src="{{asset('assets\images\KeyFeatures\virtualschooling\selfexplanatoryvideos2.png')}}"
+                            alt="Icon" class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Self Explanatory Videos</h5>
+                            <p class="text pr-2">Videos that help you visualize various
+                                concepts, making it easier to understand.</p>
                         </div>
                     </div>
-
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="single-about d-sm-flex mt-30  Features pb-3 pt-2 pl-2 media">
+                        <img src="{{asset('assets\images\KeyFeatures\virtualschooling\onlineassessment2.png')}}"
+                            alt="Icon" class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Online Assessments</h5>
+                            <p class="text pr-2"> Easy to create, launch and manage online
+                                tests and
+                                assessments securely with Google Classroom.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="single-about d-sm-flex mt-30 Features pb-3 pt-2 pl-2 media">
+                        <img src="{{asset('assets\images\KeyFeatures\virtualschooling\mocktest.png')}}" alt="Icon"
+                            class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Mock Tests</h5>
+                            <p class="text pr-2">
+                                Be exam ready by solving test questions from a pool of
+                                questions
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="single-about media d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media">
+                        <img src="{{asset('assets\images\KeyFeatures\virtualschooling\Additionalresources.png')}}"
+                            alt="Icon" class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Additional Resources</h5>
+                            <p class="text pr-2">
+                                Extra Resources like Drawing Board, WikiPedia and many more
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div id="institutional" class="hidden portfolio-card institutional-brand">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex mt-30   pb-3 pt-2 pl-2 Features media ">
+                        <img src="{{asset('assets\images\KeyFeatures\InstitutionalBranding\School Website_2.png')}}"
+                            alt="Icon" class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Educational institution Website</h5>
+                            <p class="text pr-2">Create your digital identity with your Educational
+                                institution
+                                Website.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media ">
+                        <img src="{{asset('assets\images\KeyFeatures\InstitutionalBranding\DigitalmarketingSetup.png')}}"
+                            alt="Icon" class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Digital Marketing Setup</h5>
+                            <p class="text pr-2">Increasing your brand presence with your own
+                                website along with social media pages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex  mt-30 pb-3 pt-2 pl-2 Features media">
+                        <img src="{{asset('assets\images\KeyFeatures\InstitutionalBranding\PromotinalVideo.png')}}"
+                            alt="Icon" class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Promotional Videos</h5>
+                            <p class="text pr-2"> Promotional video content for individual educational
+                                institution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="smart" class="hidden  portfolio-card smart-teacher">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex mt-30 pb-3 pt-2 pl-2 Features media">
+                        <img src="{{asset('assets\images\KeyFeatures\SmartTeacherTraining\OnlineTeacherAssessment_2.png')}}"
+                            alt="Icon" class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Online Teacher Assessment</h5>
+                            <p class="text pr-2">Assessing the teacher’s ability to help
+                                finesse their technical knowledge.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex  mt-30 pb-3 pt-2 pl-2 Features media">
+                        <img src="{{asset('assets\images\KeyFeatures\SmartTeacherTraining\Smart Teacher Training.png')}}"
+                            alt="Icon" class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Online Teacher Training Course</h5>
+                            <p class="text pr-2">Familiarising teachers with the new
+                                technological trends </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex  mt-30 pb-3 pt-2 pl-2 Features media">
+                        <img src="{{asset('assets\images\KeyFeatures\SmartTeacherTraining\SmartTeacherCertification.png')}}"
+                            alt="Icon" class="align-self-center mr-3">
+                        <div class="about-content media-body">
+                            <h5 class="mt-0 mb-1">Smart Teacher Certification</h5>
+                            <p class="text pr-2">Certifying teachers as technologically
+                                advanced ‘Smart Teachers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
     </section>
     <!--====== Key Features PART END ======-->
 
-
-    <footer id="footer" class="footer-area">
-        <div class="footer-widget">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-link">
-                            <h6 class="footer-title">Company</h6>
-                            <ul>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                <li><a href="#pricing">Plans</a></li>
-                            </ul>
-                        </div> <!-- footer link -->
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-link">
-                            <h6 class="footer-title">Solutions</h6>
-                            <ul>
-                                <li><a href="#portfolio" class="goto" data-id="virtualclass">Virtual Classroom App</a>
-                                </li>
-                                <li><a href="#portfolio" class="goto" data-id="selflearning">Self Learning App</a></li>
-                                <li><a href="#portfolio" class="goto" data-id="instbrand">Institutional Branding</a>
-                                </li>
-                                <li><a href="#portfolio" class="goto" data-id="smartteacher">Smart Teacher Training</a>
-                                </li>
-                            </ul>
-                        </div> <!-- footer link -->
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-link">
-                            <h6 class="footer-title">Plan</h6>
-                            <ul>
-                                <li><a href="#basic">Basic</a></li>
-                                <li><a href="#standard">Standard</a></li>
-                                <li><a href="#premium">Premium</a></li>
-                            </ul>
-                        </div> <!-- footer link -->
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-link">
-                            <h6 class="footer-title">Help & Support</h6>
-                            <ul>
-                                <li><a href="#">Support Center</a></li>
-                                <li><a target="_blank" href="{{route('faq">FAQ</a></li>
-                                <li><a target="_blank" href="{{route('termsandconditions">Terms & Conditions</a>
-                                </li>
-                                <li><a target="_blank" href="{{route('privacypolicies">Privacy Policy</a></li>
-                            </ul>
-                        </div> <!-- footer link -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
-
-    </footer>
     <div class="modal fade" id="modal-contact">
         <div class="modal-dialog modal-lg" style="border-color: #161f33;border-style: groove;border-radius: 10px;">
             <div class="modal-content">
@@ -495,8 +355,7 @@
                     <div class="text-center" style="font-size:small;color:red;">We will provide one free consultation
                         call
                         and all relevant documents will be send via mail provided below</div>
-                    <form role="form" id="saveteacher" enctype="multipart/form-data" method="post"
-                        action="{{route('savecontact">
+                    <form role="form" id="saveteacher" enctype="multipart/form-data" method="post" action="{{route('savecontact">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12">
@@ -548,127 +407,127 @@
                                             <option value="" selected>Select State</option>
                                             @foreach($state as $st)
                                             <option value="{{$st->id}}">{{$st->name}}</option>
-                                        @endforeach
-                                        </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="city">City</label>
-                            <select class="form-control" name="city" id="city" style="text-transform: capitalize;">
-                                <option value="" selected>Select City</option>
-                            </select>
-                        </div>
-                    </div>
-
+                        @endforeach
+                        </select>
                 </div>
             </div>
-            <div class="modal-footer justify-content-center">
-                <button type="submit" class="btn btn-primary w-100" style="background:#161f33;">Submit</button>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <select class="form-control" name="city" id="city" style="text-transform: capitalize;">
+                        <option value="" selected>Select City</option>
+                    </select>
+                </div>
             </div>
-            </form>
-
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/e-edport/e-edport-product-demonstration"
-                style="min-width:320px;height:630px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-            <!-- Calendly inline widget end -->
-        </div>
 
         </div>
-        </div>
-        </div>
-        <!--====== jquery js ======-->
-        <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-        <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+    </div>
+    <div class="modal-footer justify-content-center">
+        <button type="submit" class="btn btn-primary w-100" style="background:#161f33;">Submit</button>
+    </div>
+    </form>
 
-        <!--====== Bootstrap js ======-->
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/e-edport/e-edport-product-demonstration"
+        style="min-width:320px;height:630px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <!-- Calendly inline widget end -->
+    </div>
 
-        <!--====== Slick js ======-->
-        <script src="assets/js/slick.min.js"></script>
+    </div>
+    </div>
+    </div>
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
 
-        <!--====== Isotope js ======-->
-        <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
 
-        <!--====== Images Loaded js ======-->
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
 
-        <!--====== Magnific Popup js ======-->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--====== Isotope js ======-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
 
-        <!--====== Scrolling js ======-->
-        <script src="assets/js/scrolling-nav.js"></script>
-        <script src="assets/js/jquery.easing.min.js"></script>
+    <!--====== Images Loaded js ======-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
 
-        <!--====== Ajax Contact js ======-->
-        <script src="assets/js/ajax-contact.js"></script>
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
-        <!--====== wow js ======-->
-        <script src="assets/js/wow.min.js"></script>
+    <!--====== Scrolling js ======-->
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
 
-        <!--=====Jquery Validate====-->
-        <script type="text/javascript" src="plugins/jquery-validation/jquery.validate.js"></script>
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
 
-        <!--====== Main js ======-->
-        <script src="assets/js/main.js"></script>
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
 
-        <!-- SweetAlert2 -->
-        <link rel="stylesheet" href="plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
-        <script type="text/javascript" src="plugins/sweetalert2/sweetalert2.min.js"></script>
-        <!-- Toastr -->
-        <script type="text/javascript" src="plugins/toastr/toastr.min.js"></script>
-        <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+    <!--=====Jquery Validate====-->
+    <script type="text/javascript" src="plugins/jquery-validation/jquery.validate.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <script type="text/javascript" src="plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script type="text/javascript" src="plugins/toastr/toastr.min.js"></script>
+    <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
 
 
 
 
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <script>
-            window.fbAsyncInit = function () {
-                FB.init({
-                    xfbml: true,
-                    version: 'v8.0'
-                });
-            };
-
-            (function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-
-        <!-- Your Chat Plugin code -->
-        <div class="fb-customerchat" attribution=setup_tool page_id="111542750588557"
-            logged_in_greeting="Hi! We can provide you a product demo. Interested?"
-            logged_out_greeting="Hi! We can provide you a product demo. Interested?">
-        </div>
-        <script>
-            $('body').on('click', '.goto', function (event) {
-                var id = $(this).attr('data-id');
-                $("#" + id).trigger("click");
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
             });
-        </script>
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="111542750588557"
+        logged_in_greeting="Hi! We can provide you a product demo. Interested?"
+        logged_out_greeting="Hi! We can provide you a product demo. Interested?">
+    </div>
+    <script>
+        $('body').on('click', '.goto', function (event) {
+            var id = $(this).attr('data-id');
+            $("#" + id).trigger("click");
+        });
+    </script>
 
 
-        <!--====== FOOTER FOUR PART START ======-->
+    <!--====== FOOTER FOUR PART START ======-->
 
-        <footer id="footer" class="footer-area">
+    <footer id="footer" class="footer-area">
 
 
-            <div class="footer-copyright">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-5">
-                            <div class="copyright text-center text-lg-left mt-10">
-                                <p class="text">© Copyright 2020, All Rights Reserved |<a style="color: #253372"
-                                        rel="nofollow" href="{{url('/"> Montbit Technologies.</a></p>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="copyright text-center text-lg-left mt-10">
+                            <p class="text">© Copyright 2020, All Rights Reserved |<a style="color: #253372"
+                                    rel="nofollow" href="{{url('/"> Montbit Technologies.</a></p>
                         </div> <!--  copyright -->
                     </div>
                     <div class="col-lg-2">
