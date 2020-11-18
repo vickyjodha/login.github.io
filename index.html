@@ -143,13 +143,13 @@
     <section class="pt-0 mt-0">
         <div class="container-fluid">
             <div class="row py-5 bg-light">
-                <div class="col-md-4 col-lg-4 col-4 text-center">
+                <div class="col-md-12 col-lg-12 col-12 text-center portfolio-card"  id="admin">
                     <a href="#" target="_blank" rel="noopener noreferrer">Admin login</a>
                 </div>
-                <div class="col-md-4 col-lg-4 col-4 text-center">
+                <div class="col-md-12 col-lg-12 col-12 text-center hidden portfolio-card" id="student">
                     <a href="#" target="_blank" rel="noopener noreferrer">Student Login</a>
                     </div>
-                <div class="col-md-4 col-lg-4 col-4 text-center"><a href="#" target="_blank" rel="noopener noreferrer">Teacher Login</a></div>
+                <div class="col-md-12 col-lg-12 col-12 text-center hidden portfolio-card" id="teacher"><a href="#" target="_blank" rel="noopener noreferrer">Teacher Login</a></div>
             </div>
         </div>
     </section>
@@ -638,6 +638,8 @@
     function showhide() {
         $('.portfolio-card').addClass('hidden');
         var a = document.getElementById("virtual");
+        let b = document.getElementById("admin");
+        b.classList.toggle("hidden");
         a.classList.toggle('hidden');
     }
 
@@ -646,6 +648,8 @@
 
         $('.portfolio-card').addClass('hidden');
         var b = document.getElementById("institutional");
+        let a = document.getElementById("student");
+        a.classList.toggle("hidden");
         b.classList.toggle('hidden');
     }
 
@@ -653,6 +657,8 @@
 
         $('.portfolio-card').addClass('hidden');
         var c = document.getElementById("smart");
+        let b = document.getElementById("teacher");
+        b.classList.toggle("hidden");
         c.classList.toggle('hidden');
     }
 
